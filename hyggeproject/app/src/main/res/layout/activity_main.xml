@@ -7,12 +7,13 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/buttonLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:gravity="center"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,7 +23,7 @@
             android:layout_width="153dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:backgroundTint="#FFE589"
+            android:backgroundTint="#D8F1FF"
             android:bufferType="spannable"
             android:fontFamily="@font/pretendard"
             android:text="채팅하기\n고민이 있나요?"
@@ -38,14 +39,14 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginLeft="10dp"
-            android:backgroundTint="#FFD3AA"
+            android:backgroundTint="#FFE589"
             android:fontFamily="@font/pretendard"
             android:freezesText="false"
-            android:text="FAQ\n궁금한 점이 있나요?"
+            android:text="휴식처 찾기\n쉴곳이 필요한가요?"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textIsSelectable="false"
-            app:icon="@drawable/faq"
+            app:icon="@drawable/location"
             app:iconGravity="textTop"
             app:iconPadding="25dp"
             app:iconTint="#000000" />
@@ -56,23 +57,25 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/buttonLayout">
 
         <Button
             android:id="@+id/button_map"
             android:layout_width="320dp"
-            android:layout_height="100dp"
+            android:layout_height="70dp"
             android:layout_marginBottom="7dp"
-            android:backgroundTint="#CAECA3"
+            android:backgroundTint="#FFFFFF"
             android:fontFamily="@font/pretendard"
-            android:text="안전한 공간이 필요하다면, \n내 근처 휴식처 확인하기"
+            android:text="FAQ 게시판"
             android:textAlignment="viewStart"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_list"

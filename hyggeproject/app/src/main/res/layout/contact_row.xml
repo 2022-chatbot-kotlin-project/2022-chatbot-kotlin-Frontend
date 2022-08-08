@@ -9,7 +9,7 @@
         android:id="@+id/parent"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#D8F1FF"
+        android:background="#FFFFFF"
         android:clickable="true"
         android:focusable="true"
         android:gravity="center_vertical"
@@ -50,7 +50,7 @@
         android:id="@+id/layout_expand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#D8F1FF"
+        android:background="#FFFFFF"
         android:orientation="vertical"
         android:visibility="gone">
 
