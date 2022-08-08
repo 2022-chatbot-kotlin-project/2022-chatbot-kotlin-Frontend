@@ -1,4 +1,4 @@
-package yubin.pygge.front_main
+package com.hygge.hygge
 
 data class Person(
     var name: String = "",

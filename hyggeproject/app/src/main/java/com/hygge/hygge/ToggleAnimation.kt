@@ -1,4 +1,4 @@
-package yubin.pygge.front_main
+package com.hygge.hygge
 
 import android.view.View
 import android.view.ViewGroup

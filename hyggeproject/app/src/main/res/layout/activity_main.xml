@@ -6,13 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button_chat"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#FFE589"
+            android:bufferType="spannable"
+            android:fontFamily="@font/pretendard"
+            android:text="채팅하기\n고민이 있나요?"
+            android:textColor="#000000"
+            android:typeface="normal"
+            app:icon="@drawable/chat"
+            app:iconGravity="textTop"
+            app:iconPadding="25dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/button_FAQ"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#FFD3AA"
+            android:fontFamily="@font/pretendard"
+            android:freezesText="false"
+            android:text="FAQ\n궁금한 점이 있나요?"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            app:icon="@drawable/faq"
+            app:iconGravity="textTop"
+            app:iconPadding="25dp"
+            app:iconTint="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/button_map"
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="7dp"
+            android:backgroundTint="#CAECA3"
+            android:fontFamily="@font/pretendard"
+            android:text="안전한 공간이 필요하다면, \n내 근처 휴식처 확인하기"
+            android:textAlignment="viewStart"
+            android:textColor="#000000" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
