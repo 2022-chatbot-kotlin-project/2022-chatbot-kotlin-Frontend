@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/drawable/custom_img.xml" value="0.1" />
+        <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/drawable/cutom_btn.xml" value="0.259" />
+        <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/no_result.xml" value="0.536" />
+        <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/rest_list.xml" value="0.4" />
+        <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/shelter_list.xml" value="0.536" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
