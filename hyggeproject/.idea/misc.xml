@@ -7,7 +7,9 @@
         <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/drawable/cutom_btn.xml" value="0.259" />
         <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/no_result.xml" value="0.536" />
         <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/rest_list.xml" value="0.4" />
-        <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/shelter_list.xml" value="0.536" />
+        <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/shelter_custom_item.xml" value="0.5929411764705882" />
+        <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/shelter_list.xml" value="0.6" />
+        <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/shelter_list_view.xml" value="0.4" />
       </map>
     </option>
   </component>
