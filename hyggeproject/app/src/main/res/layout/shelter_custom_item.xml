@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <Button
         android:id="@+id/tag2"
@@ -62,11 +62,11 @@
 
     <TextView
         android:id="@+id/shelter_description"
-        android:layout_width="270dp"
-        android:layout_height="84dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="13dp"
-        android:text="서울시립용산일시청소년쉼터 &quot;청소년 누리&quot;는 가족이나 사회와의 유대가 없거나 약하여 거리에 노출된 거리 위기 청소년 및 가정 밖 청소년을 위한 공간입니다."
+        android:text="쉼터 설명"
         app:layout_constraintStart_toEndOf="@+id/shelter_image"
         app:layout_constraintTop_toBottomOf="@+id/shelter_title" />
 
