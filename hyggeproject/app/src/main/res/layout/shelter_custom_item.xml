@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/cutom_btn"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="10dp"
+        android:text="일시"
+        app:layout_constraintStart_toEndOf="@+id/tag6"
+        app:layout_constraintTop_toBottomOf="@+id/shelter_description" />
+
+    <Button
+        android:id="@+id/tag3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/cutom_btn"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="10dp"
+        android:text="공용"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shelter_description" />
+
+    <Button
+        android:id="@+id/tag6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/cutom_btn"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="10dp"
+        android:text="정원제한"
+        app:layout_constraintStart_toEndOf="@+id/tag3"
+        app:layout_constraintTop_toBottomOf="@+id/shelter_description" />
+
+    <TextView
+        android:id="@+id/shelter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="서울시립용산 일시청소년쉼터"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/shelter_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shelter_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:text="쉼터 설명"
+        app:layout_constraintStart_toEndOf="@+id/shelter_image"
+        app:layout_constraintTop_toBottomOf="@+id/shelter_title" />
+
+    <ImageView
+        android:id="@+id/shelter_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/custom_img" />
+</androidx.constraintlayout.widget.ConstraintLayout>
