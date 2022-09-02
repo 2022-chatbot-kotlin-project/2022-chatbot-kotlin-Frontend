@@ -12,7 +12,8 @@ import kotlinx.android.synthetic.main.chatbot_screen.*
 import kotlinx.coroutines.*
 
 class ChatBotActivity: AppCompatActivity() {
-    private val TAG = "ChatBotActivity"
+    private val TAG = "btnGoSubActivity.setOnClickListener {            val intent = Intent(this, SubActivity::class.java)            startActivity(intent)        }\n" +
+            "출처: https://juahnpop.tistory.com/212 [Blacklog:티스토리]"
 
     //You can ignore this messageList if you're coming from the tutorial,
     // it was used only for my personal debugging
