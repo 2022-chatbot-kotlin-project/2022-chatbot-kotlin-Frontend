@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Hygge</string>
 
-    <string name="lorem">여성긴급전화\t 1366\n자살예방상담전화\t1393\n정신건강상담전화\t 11577-0199\n청소년상담\t1388</string>
+    <string name="shelter">여성긴급전화\n자살예방상담전화\n정신건강상담전화\n청소년상담</string>
+    <string name="call">1366\n1393\n11577 - 0199\n1388</string>
 
     <string-array name="people">
 
