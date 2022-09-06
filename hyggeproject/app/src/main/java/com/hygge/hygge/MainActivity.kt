@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.hygge.hygge.chatbot.ChatBotActivity
+import com.hygge.hygge.faq.FAQActivity
 import com.hygge.hygge.main.ExpandableAdapter
 import com.hygge.hygge.main.Person
 import kotlinx.android.synthetic.main.activity_main.*
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         button_FAQ.setOnClickListener {
-            val intent = Intent(this, ChatBotActivity::class.java)
+            val intent = Intent(this, FAQActivity::class.java)
             startActivity(intent)
         }
 

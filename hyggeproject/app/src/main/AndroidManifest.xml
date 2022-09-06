@@ -21,6 +21,7 @@
         <activity android:name=".chatbot.ChatBotActivity"></activity>
         <activity android:name=".NoSearchListView"></activity>
         <activity android:name=".ShelterListView"></activity>
+        <activity android:name=".faq.FAQActivity"></activity>
     </application>
 
 </manifest>
