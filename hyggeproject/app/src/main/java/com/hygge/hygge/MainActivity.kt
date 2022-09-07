@@ -1,11 +1,14 @@
 package com.hygge.hygge
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.hygge.hygge.main.ExpandableAdapter
 import com.hygge.hygge.main.Person
+import com.hygge.hygge.map.MapsActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_list)
+        val mapButton = findViewById<Button>(R.id.button_map)
 
         personList = ArrayList()
         personList = loadData()
@@ -25,6 +29,12 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = ExpandableAdapter(personList)
         recyclerView.adapter = adapter
+
+        //맵버튼 클릭 시, 페이지 이동
+        mapButton.setOnClickListener{
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
@@ -41,4 +51,6 @@ class MainActivity : AppCompatActivity() {
         }
         return people
     }
+
+
 }
