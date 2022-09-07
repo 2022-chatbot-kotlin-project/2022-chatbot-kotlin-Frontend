@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.hygge.hygge.chatbot.ChatBotActivity
 import com.hygge.hygge.main.ExpandableAdapter
 import com.hygge.hygge.main.Person
+import com.hygge.hygge.map.MapsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +28,11 @@ class MainActivity : AppCompatActivity() {
 
         button_FAQ.setOnClickListener {
             val intent = Intent(this, ChatBotActivity::class.java)
+            startActivity(intent)
+        }
+
+        button_map.setOnClickListener{
+            val intent = Intent(this, MapsActivity::class.java)
             startActivity(intent)
         }
 
