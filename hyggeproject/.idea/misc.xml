@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Git/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Git/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/activity_maps.xml" value="0.176" />
+        <entry key="..\:/Git/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/contact_row.xml" value="0.72" />
+        <entry key="..\:/Git/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/no_result.xml" value="0.2" />
+        <entry key="..\:/Git/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/search_filter.xml" value="0.2" />
         <entry key="..\:/KB-Software-Frontend/hyggeproject/app/src/main/res/drawable/background_splash.xml" value="0.1" />
         <entry key="..\:/KB-Software-Frontend/hyggeproject/app/src/main/res/drawable/receive_round_box.xml" value="0.1" />
         <entry key="..\:/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/activity_main.xml" value="0.11955420466058764" />
@@ -16,24 +21,16 @@
         <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/shelter_list.xml" value="0.6" />
         <entry key="..\:/Users/20200/Desktop/KB-Software-Frontend/hyggeproject/app/src/main/res/layout/shelter_list_view.xml" value="0.4" />
         <entry key="app/src/main/res/drawable/chat.xml" value="0.196" />
-        <entry key="app/src/main/res/drawable/custom_img.xml" value="0.196" />
-        <entry key="app/src/main/res/drawable/cutom_btn.xml" value="0.196" />
         <entry key="app/src/main/res/drawable/ic_round_keyboard_arrow_down_24.xml" value="0.18" />
         <entry key="app/src/main/res/drawable/location.xml" value="0.196" />
-        <entry key="app/src/main/res/drawable/main_button.xml" value="0.196" />
-        <entry key="app/src/main/res/drawable/round_button.xml" value="0.196" />
-        <entry key="app/src/main/res/drawable/round_button_2.xml" value="0.196" />
-        <entry key="app/src/main/res/drawable/round_button_3.xml" value="0.196" />
-        <entry key="app/src/main/res/drawable/round_button_row.xml" value="0.196" />
         <entry key="app/src/main/res/drawable/shadow.xml" value="0.196" />
-        <entry key="app/src/main/res/drawable/shadow_round_button.xml" value="0.196" />
         <entry key="app/src/main/res/font/font.xml" value="0.35794871794871796" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3662252166254688" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.32222222222222224" />
         <entry key="app/src/main/res/layout/chatbot_screen.xml" value="0.3282051282051282" />
         <entry key="app/src/main/res/layout/contact_row.xml" value="0.32222222222222224" />
         <entry key="app/src/main/res/layout/message_item.xml" value="0.17135416666666667" />
-        <entry key="app/src/main/res/layout/no_result.xml" value="0.22125498453776038" />
-        <entry key="app/src/main/res/layout/search_filter.xml" value="0.39349924723307295" />
+        <entry key="app/src/main/res/layout/no_result.xml" value="0.17135416666666667" />
+        <entry key="app/src/main/res/layout/search_filter.xml" value="0.17135416666666667" />
         <entry key="app/src/main/res/layout/shelter_custom_item.xml" value="0.17135416666666667" />
         <entry key="app/src/main/res/layout/shelter_list_view.xml" value="0.17135416666666667" />
       </map>
