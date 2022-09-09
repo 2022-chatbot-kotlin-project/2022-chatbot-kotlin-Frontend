@@ -5,6 +5,9 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.graphics.drawable.BitmapDrawable
 import android.location.Location
 import android.location.LocationListener
 import android.location.LocationManager
@@ -21,10 +24,7 @@ import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.BitmapDescriptorFactory
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.Marker
-import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.*
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.hygge.hygge.R
 import com.hygge.hygge.ShelterListView
@@ -90,9 +90,18 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, CoroutineScope {
             "공용", "일시", 10, "http://www.nuryworld.kr/", 37.5528471041831, 126.964368040702)
 
         val shelterMarkerOptions : MarkerOptions = MarkerOptions()
+        //val bitMapDescriptor : BitmapDescriptor = BitmapDescriptorFactory.fromResource(R.drawable.ic_marker_yellow_icon)
+        //val bitmap : Bitmap = BitmapFactory.decodeResource(null, R.drawable.ic_marker_yellow_icon)
+
+//        val drawable = getDrawable(R.drawable.ic_marker_yellow_icon)
+//        val bitmapDrawable = drawable as BitmapDrawable
+//        val bitmap = bitmapDrawable.bitmap
+        
         shelterMarkerOptions.apply {
             position(LatLng(shelterArray[0]!!.latitude, shelterArray[0]!!.longitude))
             title(shelterArray[0]!!.name)
+            icon(BitmapDescriptorFactory.defaultMarker(40F))
+            alpha(0.5f)
         }
         map.addMarker(shelterMarkerOptions)
         Log.d("*****", "shelterMarkerOptions 추가 완료")
@@ -107,8 +116,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, CoroutineScope {
         )
         val markerOption = MarkerOptions().apply {
             position(positionLatLng)
-            title(searchResult.name)
-            snippet(searchResult.fullAdress)
+            //title(searchResult.name)
+            //snippet(searchResult.fullAdress)
+            icon(BitmapDescriptorFactory.defaultMarker(40F))
         }
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(positionLatLng, CAMERA_ZOOM_LEVEL))
 
