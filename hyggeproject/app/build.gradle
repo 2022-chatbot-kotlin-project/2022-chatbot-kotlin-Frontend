@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android-extensions'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 Properties properties = new Properties()
@@ -19,7 +20,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField "String", "GOOGLE_API_KEY", properties["googleApi.key"]
+        /*buildConfigField "String", "GOOGLE_API_KEY", properties["MAPS_API_KEY"]*/
         buildConfigField "String", "TMAP_API_KEY", properties["tmapApi.key"]
     }
 
