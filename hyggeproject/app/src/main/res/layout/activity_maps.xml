@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:elevation="20dp">
 
     <!--scr 부분 안먹음...-->
     <fragment
@@ -20,7 +21,7 @@
         android:id="@+id/btn_current_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
         android:soundEffectsEnabled="false"
         android:src="@drawable/ic_current_location_icon"
@@ -47,6 +48,7 @@
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:background="#FFFFFF"
+        android:elevation="20dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -59,16 +61,28 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="내 근처 휴식처"
+            android:text="휴식처"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
         <ImageButton
             android:id="@+id/btn_search"
