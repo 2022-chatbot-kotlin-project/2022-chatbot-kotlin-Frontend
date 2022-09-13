@@ -16,7 +16,9 @@ import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
 import android.util.Log
+import android.view.LayoutInflater
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 
@@ -76,13 +78,15 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, CoroutineScope {
     private final fun bindViews() = with(binding) {
         //currentLocationButton.setImageDrawable(R.drawable.ic_current_location_button)
 
-        currentLocationButton.setOnClickListener {
+        btn_current_location.setOnClickListener {
             Log.d("*****", "현재 위치 버튼 눌림")
             getMyLocation()
         }
-
+        
 
     }
+
+
 
     private fun setupShelterMarker() {
         val shelterArray = Array<Shelter?>(2){null}
@@ -358,6 +362,16 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, CoroutineScope {
         listButton.setOnClickListener{
             val intent = Intent(this, ShelterListView::class.java)
             startActivity(intent)
+        }
+
+        btn_search.setOnClickListener {
+            Log.d("*****", "검색 버튼 눌림")
+
+            val dialogView = LayoutInflater.from(this).inflate(R.layout.search_filter, null)
+            val builder = AlertDialog.Builder(this)
+                .setView(dialogView)
+
+            builder.show()
         }
 
     }
