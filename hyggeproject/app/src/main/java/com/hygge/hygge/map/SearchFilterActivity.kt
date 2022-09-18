@@ -22,7 +22,7 @@ class SearchFilterActivity : AppCompatActivity(){
     private var count = 1;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = SearchFilterBinding.inflate(layoutInflater);
+        binding = SearchFilterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
