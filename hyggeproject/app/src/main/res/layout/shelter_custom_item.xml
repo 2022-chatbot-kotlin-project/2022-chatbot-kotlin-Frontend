@@ -3,10 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
 
     <Button
         android:id="@+id/tag2"
+        android:clickable="false"
+        android:focusable="false"
         android:layout_width="wrap_content"
         android:layout_height="39dp"
         android:layout_marginStart="11dp"
@@ -21,6 +24,8 @@
 
     <Button
         android:id="@+id/tag3"
+        android:clickable="false"
+        android:focusable="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="126dp"
@@ -35,6 +40,8 @@
 
     <Button
         android:id="@+id/tag6"
+        android:clickable="false"
+        android:focusable="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"

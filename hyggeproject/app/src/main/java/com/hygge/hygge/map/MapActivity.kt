@@ -360,8 +360,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, CoroutineScope {
         map.addMarker(MarkerOptions().position(sydney))*/
 
         listButton.setOnClickListener{
+            Log.d("*****", "MapActivity에 setOnClickListener 실행됨")
             val intent = Intent(this, ShelterListView::class.java)
+            Log.d("*****", "MapActivity에 Intent 생성")
             startActivity(intent)
+            Log.d("*****", "MapActivity에 startActivity 실행")
         }
 
         btn_search.setOnClickListener {
